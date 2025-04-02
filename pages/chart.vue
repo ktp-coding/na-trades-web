@@ -1,37 +1,3 @@
-<template>
-    <div class="container mx-auto p-4">
-        <h1 class="text-2xl font-bold mb-4">Dashboard</h1>
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-            <div class="bg-card rounded-lg shadow p-4">
-                <h2 class="text-lg font-semibold mb-2">Export Growth Rate</h2>
-                <p class="text-2xl font-bold text-primary">0.82%</p>
-                <p class="text-sm text-muted-foreground">Latest value (2021)</p>
-            </div>
-            <div class="bg-card rounded-lg shadow p-4">
-                <h2 class="text-lg font-semibold mb-2">Import Growth Rate</h2>
-                <p class="text-2xl font-bold text-primary">2.51%</p>
-                <p class="text-sm text-muted-foreground">Latest value (2021)</p>
-            </div>
-            <div class="bg-card rounded-lg shadow p-4">
-                <h2 class="text-lg font-semibold mb-2">Growth Rate Difference</h2>
-                <p class="text-2xl font-bold text-destructive">-1.69%</p>
-                <p class="text-sm text-muted-foreground">Latest value (2021)</p>
-            </div>
-        </div>
-        <div class="mt-8">
-            <div class="bg-card rounded-lg shadow p-4">
-                <h2 class="text-lg font-semibold mb-4">Growth Rate Trend</h2>
-                <LineChart :data="data" index="year" :categories="['Export Growth Rate', 'Import Growth Rate']"
-                    :y-formatter="(tick, i) => {
-                        return typeof tick === 'number'
-                            ? `${tick.toFixed(2)}%`
-                            : ''
-                    }" />
-            </div>
-        </div>
-    </div>
-</template>
-
 <script setup lang="ts">
 import { LineChart } from '@/components/ui/chart-line'
 
@@ -298,3 +264,11 @@ const data = [
     },
 ]
 </script>
+
+<template>
+    <LineChart :data="data" index="year" :categories="['Export Growth Rate', 'Import Growth Rate']" :y-formatter="(tick, i) => {
+        return typeof tick === 'number'
+            ? `$ ${new Intl.NumberFormat('us').format(tick).toString()}`
+            : ''
+    }" />
+</template>
