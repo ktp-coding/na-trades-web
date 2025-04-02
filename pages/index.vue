@@ -367,6 +367,10 @@ async function fetchPriceData() {
 onMounted(() => {
     fetchPriceData()
 })
+
+definePageMeta({
+    redirect: '/landing'
+})
 </script>
 
 <template>

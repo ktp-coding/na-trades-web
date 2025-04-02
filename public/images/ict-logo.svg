@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="200" height="200" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <circle cx="100" cy="100" r="98" stroke="white" stroke-width="2"/>
+  <!-- Market structure arrows -->
+  <path d="M60 140 L100 60 L140 140" stroke="white" stroke-width="3" fill="none"/>
+  <path d="M80 100 L120 100" stroke="white" stroke-width="3"/>
+  <!-- Support/Resistance lines -->
+  <path d="M40 80 L160 80" stroke="white" stroke-width="2" stroke-dasharray="4"/>
+  <path d="M40 120 L160 120" stroke="white" stroke-width="2" stroke-dasharray="4"/>
+</svg> 
