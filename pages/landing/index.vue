@@ -36,7 +36,8 @@
             <div class="container mx-auto text-center">
                 <h2 class="text-4xl font-bold mb-8">About</h2>
                 <p class="max-w-3xl mx-auto text-lg opacity-90">
-                    NA TRADES applies ICT and Quarterly Theory to uncover the true intentions behind price action.
+                    NA TRADES applies ICT Concept and Quarterly Theory to uncover the true intentions behind price
+                    action.
                     Every trade is rooted in structure, timing, and clarity — a reflection of our commitment to
                     mastering the craft, respecting the process, and growing with consistency in the prop firm journey.
 
