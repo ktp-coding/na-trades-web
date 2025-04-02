@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg width="800px" height="800px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg">
-    <circle cx="12" cy="12" r="11" stroke="#10b981" stroke-width="1.5" fill="none"/>
-    <text x="50%" y="50%" text-anchor="middle" dy=".3em" fill="#10b981" font-family="Arial" font-size="10" font-weight="bold">NA</text>
-    <circle cx="12" cy="12" r="11.5" stroke="#10b981" stroke-width="0.5" fill="none"/>
-</svg> 
